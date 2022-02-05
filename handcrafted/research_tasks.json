@@ -1,0 +1,361 @@
+[
+  {
+    "code": "galar",
+    "name": "Galar",
+    "researchTasks": [
+      {
+        "name": "First partner Pokémon",
+        "pokemonIds": [
+          810,
+          813,
+          816
+        ]
+      },
+      {
+        "name": "Route 1",
+        "pokemonIds": [
+          819,
+          821,
+          831
+        ]
+      },
+      {
+        "name": "Slumbering Weald",
+        "pokemonIds": [
+          517,
+          824,
+          10164
+        ]
+      },
+      {
+        "name": "Rolling Fields",
+        "pokemonIds": [
+          95,
+          415,
+          659,
+          761
+        ]
+      },
+      {
+        "name": "Watchtower Ruins",
+        "pokemonIds": [
+          92,
+          355,
+          622,
+          623
+        ]
+      },
+      {
+        "name": "Bridge Field",
+        "pokemonIds": [
+          536,
+          686,
+          742,
+          759,
+          10171
+        ]
+      },
+      {
+        "name": "Dusty Bowl",
+        "pokemonIds": [
+          592,
+          830,
+          857
+        ]
+      },
+      {
+        "name": "Fishing in Galar",
+        "pokemonIds": [
+          129,
+          746,
+          846,
+          847
+        ]
+      },
+      {
+        "name": "Galar Mine",
+        "pokemonIds": [
+          527,
+          532,
+          837,
+          838
+        ]
+      },
+      {
+        "name": "Galar Mine No. 2",
+        "pokemonIds": [
+          559,
+          767,
+          834,
+          10177
+        ]
+      },
+      {
+        "name": "Glimwood Tangle",
+        "pokemonIds": [
+          708,
+          756,
+          854,
+          860
+        ]
+      },
+      {
+        "name": "Route 10",
+        "pokemonIds": [
+          460,
+          584,
+          614,
+          10165
+        ]
+      },
+      {
+        "name": "The four Fossils",
+        "pokemonIds": [
+          880,
+          881,
+          882,
+          883
+        ]
+      },
+      {
+        "name": " Working Pokémon",
+        "pokemonIds": [
+          479,
+          823,
+          868,
+          876,
+          878
+        ]
+      },
+      {
+        "name": "Troublesome Team Yell",
+        "pokemonIds": [
+          510,
+          828,
+          10172
+        ]
+      },
+      {
+        "name": "Marnie's Pokémon",
+        "pokemonIds": [
+          454,
+          861,
+          877
+        ]
+      },
+      {
+        "name": "Bede's Pokémon",
+        "pokemonIds": [
+          575,
+          857,
+          10159
+        ]
+      },
+      {
+        "name": "Leon's Pokémon",
+        "pokemonIds": [
+          6,
+          681,
+          887
+        ]
+      },
+      {
+        "name": "The Pokémon Band",
+        "pokemonIds": [
+          812,
+          849,
+          862
+        ]
+      },
+      {
+        "name": "Legends of Galar",
+        "pokemonIds": [
+          888,
+          889,
+          890
+        ]
+      }
+    ]
+  },
+  {
+    "code": "kanto",
+    "name": "Kanto",
+    "researchTasks": [
+      {
+        "name": "Route 1",
+        "pokemonIds": [
+          16,
+          19,
+          43,
+          69
+        ]
+      },
+      {
+        "name": "Viridian Forest",
+        "pokemonIds": [
+          10,
+          13,
+          25
+        ]
+      },
+      {
+        "name": "Mt. Moon",
+        "pokemonIds": [
+          35,
+          41,
+          46,
+          74
+        ]
+      },
+      {
+        "name": "Aquatic Pokémon",
+        "pokemonIds": [
+          60,
+          72,
+          116,
+          120,
+          129
+        ]
+      },
+      {
+        "name": "Diglett's Cave",
+        "pokemonIds": [
+          50,
+          51
+        ]
+      },
+      {
+        "name": "Psychic",
+        "pokemonIds": [
+          63,
+          96,
+          122
+        ]
+      },
+      {
+        "name": "Rock Tunnel",
+        "pokemonIds": [
+          4,
+          66,
+          111,
+          115
+        ]
+      },
+      {
+        "name": "Pokémon Tower",
+        "pokemonIds": [
+          92,
+          93,
+          104
+        ]
+      },
+      {
+        "name": "Fighting Dojo",
+        "pokemonIds": [
+          57,
+          62,
+          68,
+          106,
+          107
+        ]
+      },
+      {
+        "name": "Power Plant",
+        "pokemonIds": [
+          81,
+          82,
+          100,
+          101,
+          125
+        ]
+      },
+      {
+        "name": "Seafoam Islands",
+        "pokemonIds": [
+          79,
+          86,
+          90,
+          124
+        ]
+      },
+      {
+        "name": "Pokémon Mansion",
+        "pokemonIds": [
+          88,
+          109,
+          126,
+          132
+        ]
+      },
+      {
+        "name": "Fossil Secrets",
+        "pokemonIds": [
+          139,
+          140,
+          141
+        ]
+      },
+      {
+        "name": "Victory Road",
+        "pokemonIds": [
+          42,
+          67,
+          75,
+          95,
+          112
+        ]
+      },
+      {
+        "name": "Cerulean Cave",
+        "pokemonIds": [
+          55,
+          108,
+          112,
+          113,
+          143
+        ]
+      },
+      {
+        "name": "Evolution Stones",
+        "pokemonIds": [
+          40,
+          103,
+          134,
+          135,
+          136
+        ]
+      },
+      {
+        "name": "Trading Mysteries",
+        "pokemonIds": [
+          65,
+          68,
+          76,
+          94
+        ]
+      },
+      {
+        "name": "Flying",
+        "pokemonIds": [
+          6,
+          142,
+          149
+        ]
+      },
+      {
+        "name": "Legendary Bird Pokémon",
+        "pokemonIds": [
+          144,
+          145,
+          146
+        ]
+      },
+      {
+        "name": "Genetic Pokémon",
+        "pokemonIds": [
+          150
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "code": "hp",
+    "name": "HP"
+  },
+  {
+    "id": 2,
+    "code": "attack",
+    "name": "Attack"
+  },
+  {
+    "id": 3,
+    "code": "defense",
+    "name": "Defense"
+  },
+  {
+    "id": 4,
+    "code": "special-attack",
+    "name": "Sp. Atk"
+  },
+  {
+    "id": 5,
+    "code": "special-defense",
+    "name": "Sp. Def"
+  },
+  {
+    "id": 6,
+    "code": "speed",
+    "name": "Speed"
+  }
+]

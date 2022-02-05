@@ -1,0 +1,82 @@
+[
+  {
+    "code": "national",
+    "name": "National",
+    "pokedex": ["national"]
+  },
+  {
+    "code": "red-blue-yellow",
+    "name": "Red, Blue & Yellow",
+    "pokedex": ["kanto"]
+  },
+  {
+    "code": "gold-silver-crystal",
+    "name": "Gold, Silver & Crystal",
+    "pokedex": ["original-johto"]
+  },
+  {
+    "code": "ruby-sapphire-emeral",
+    "name": "Ruby, Sapphire & Emerald",
+    "pokedex": ["hoenn"]
+  },
+  {
+    "code": "firered-leafgreen",
+    "name": "FireRed & LeafGreen",
+    "pokedex": ["kanto"]
+  },
+  {
+    "code": "diamond-pearl",
+    "name": "Diamond & Pearl",
+    "pokedex": ["original-sinnoh"]
+  },
+  {
+    "code": "platinum",
+    "name": "Platinum",
+    "pokedex": ["extended-sinnoh"]
+  },
+  {
+    "code": "heartgold-soulsilver",
+    "name": "HeartGold & SoulSilver",
+    "pokedex": ["updated-johto"]
+  },
+  {
+    "code": "black-white",
+    "name": "Black & White",
+    "pokedex": ["original-unova"]
+  },
+  {
+    "code": "black2-white2",
+    "name": "Black 2 & White 2",
+    "pokedex": ["updated-unova"]
+  },
+  {
+    "code": "x-y",
+    "name": "X & Y",
+    "pokedex": ["kalos-central", "kalos-coastal", "kalos-mountain"]
+  },
+  {
+    "code": "omega-rubi-alpha-sapphire",
+    "name": "Omega Ruby & Alpha Sapphire",
+    "pokedex": ["updated-hoenn"]
+  },
+  {
+    "code": "sun-moon",
+    "name": "Sun & Moon",
+    "pokedex": ["original-alola", "original-melemele", "original-akala", "original-ulaula", "original-poni"]
+  },
+  {
+    "code": "ultra-sun-ultra-moon",
+    "name": "Ultra Sun & Ultra Moon",
+    "pokedex": ["updated-alola", "updated-melemele", "updated-akala", "updated-ulaula", "updated-poni"]
+  },
+  {
+    "code": "lets-go",
+    "name": "Let's Go Pikachu & Let's Go Eevee",
+    "pokedex": ["updated-kanto"]
+  },
+  {
+    "code": "sword-shield",
+    "name": "Sword & Shield",
+    "pokedex": ["galar", "isle-of-armor", "crown-tundra"]
+  }
+]
