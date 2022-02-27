@@ -97,7 +97,7 @@ async function loadSpecies() {
     pokemonIds: filterPokemon(spcy.pokemons).map(pkm => pkm.id).sort((a, b) => a - b)
   })).sort((a, b) => a.id - b.id)
 
-  fs.writeFileSync('./data/raw/species.json', JSON.stringify(species), { flag: 'w+' })
+  fs.writeFileSync('./raw/species.json', JSON.stringify(species), { flag: 'w+' })
 }
 
 async function loadPokemon() {
@@ -110,7 +110,7 @@ async function loadPokemon() {
     speciesId: pkm.species.id,
   })).sort((a, b) => a.id - b.id)
 
-  fs.writeFileSync('./data/raw/pokemon.json', JSON.stringify(pokemons), { flag: 'w+' })
+  fs.writeFileSync('./raw/pokemon.json', JSON.stringify(pokemons), { flag: 'w+' })
 
   return pokemons
 }
@@ -142,7 +142,7 @@ async function loadPokemonData(pkm) {
     })).sort((s1, s2) => s1.id - s2.id)
   }
 
-  fs.writeFileSync(`./data/raw/pokemon/${pkm.id}.json`, JSON.stringify(pokemon), { flag: 'w+' })
+  fs.writeFileSync(`./raw/pokemon/${pkm.id}.json`, JSON.stringify(pokemon), { flag: 'w+' })
 }
 
 export default async function load() {

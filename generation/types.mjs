@@ -32,5 +32,5 @@ export default async function load() {
     }))
   })).filter(type => !['shadow', 'unknown'].includes(type.code)).sort((a, b) => a.id - b.id)
 
-  fs.writeFileSync('./data/raw/types.json', JSON.stringify(types), { flag: 'w+' })
+  fs.writeFileSync('./raw/types.json', JSON.stringify(types), { flag: 'w+' })
 }

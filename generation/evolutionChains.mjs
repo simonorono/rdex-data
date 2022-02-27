@@ -41,5 +41,5 @@ export default async function load() {
 
   }))
 
-  fs.writeFileSync('./data/raw/evolution-chains.json', JSON.stringify(chains), { flag: 'w+' })
+  fs.writeFileSync('./raw/evolution-chains.json', JSON.stringify(chains), { flag: 'w+' })
 }

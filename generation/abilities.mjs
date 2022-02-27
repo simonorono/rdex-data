@@ -46,5 +46,5 @@ export default async function load() {
     return result
   })
 
-  fs.writeFileSync('./data/raw/abilities.json', JSON.stringify(abilities), { flag: 'w+' })
+  fs.writeFileSync('./raw/abilities.json', JSON.stringify(abilities), { flag: 'w+' })
 }

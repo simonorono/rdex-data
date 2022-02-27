@@ -36,5 +36,5 @@ export default async function load() {
     pokedex.entries.sort((pe1, pe2) => pe1.number - pe2.number)
   })
 
-  fs.writeFileSync('./data/raw/pokedex.json', JSON.stringify(pokedex), { flag: 'w+' })
+  fs.writeFileSync('./raw/pokedex.json', JSON.stringify(pokedex), { flag: 'w+' })
 }
