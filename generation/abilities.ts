@@ -26,13 +26,16 @@ const query = `
 export default async function load() {
   const response = await executeQuery(query)
 
-  const abilities = response.data.abilities.map((obj: any) => {
-    const result = {
+  const abilities = response.data.abilities.map((obj: any): Ability => {
+    const result: Ability = {
       id: obj.id,
       code: obj.name,
       name: obj.names[0].name,
-      pokemonIds: obj.pokemon.map((_: any) => _.id),
-    } as any
+      pokemonIds: obj.pokemon.map((_: { id: number }) => _.id),
+      effect: '',
+      shortEffect: '',
+      flavorText: '',
+    }
 
     if (obj.effect.length > 0) {
       result.effect = obj.effect[0].effect

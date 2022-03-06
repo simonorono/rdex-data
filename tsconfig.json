@@ -1,10 +1,13 @@
 {
   "compilerOptions": {
-    "target": "es2016",
-    "module": "commonjs",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
+    "module": "commonjs",
+    "paths": {
+      "*": ["types.d.ts"]
+    },
     "strict": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "target": "es2016"
   }
 }

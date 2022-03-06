@@ -39,7 +39,7 @@ const pokemonQuery = `
   }
 `
 
-function getPokemonDataQuery(id: number) {
+function getPokemonDataQuery(id: number): string {
   return `
     query PokemonData {
       pokemon: pokemon_v2_pokemon(where: {id: {_eq: ${id}}}) {
@@ -91,15 +91,18 @@ async function loadSpecies() {
   const speciesResponse = await executeQuery(speciesQuery)
 
   const species = speciesResponse.data.species
-    .map((spcy: any) => ({
-      id: spcy.id,
-      code: spcy.code,
-      name: spcy.species_name[0].name,
-      pokemonIds: filterPokemon(spcy.pokemons)
-        .map(pkm => pkm.id)
-        .sort((a, b) => a - b),
-    }))
-    .sort((a: any, b: any) => a.id - b.id)
+    .map(
+      (spcy: any) =>
+        ({
+          id: spcy.id,
+          code: spcy.code,
+          name: spcy.species_name[0].name,
+          pokemonIds: filterPokemon(spcy.pokemons)
+            .map(pkm => pkm.id)
+            .sort((a, b) => a - b),
+        } as PokemonSpecies)
+    )
+    .sort((a: PokemonSpecies, b: PokemonSpecies) => a.id - b.id)
 
   fs.writeFileSync('./raw/species.json', JSON.stringify(species), {
     flag: 'w+',
@@ -110,12 +113,15 @@ async function loadPokemon() {
   const pokemonResponse = await executeQuery(pokemonQuery)
 
   const pokemons = filterPokemon(pokemonResponse.data.pokemon)
-    .map(pkm => ({
-      id: pkm.id,
-      code: pkm.code,
-      types: pkm.types.map((type: any) => [type.slot, type.type.id]),
-      speciesId: pkm.species.id,
-    }))
+    .map(
+      pkm =>
+        ({
+          id: pkm.id,
+          code: pkm.code,
+          types: pkm.types.map((type: any) => [type.slot, type.type.id]),
+          speciesId: pkm.species.id,
+        } as Pokemon)
+    )
     .sort((a, b) => a.id - b.id)
 
   fs.writeFileSync('./raw/pokemon.json', JSON.stringify(pokemons), {
@@ -132,7 +138,7 @@ async function loadPokemonData(pkm: any) {
 
   const obj = response.data.pokemon[0]
 
-  const pokemon = {
+  const pokemon: PokemonData = {
     id: obj.id,
     genderRate: obj.species.gender_rate,
     captureRate: obj.species.capture_rate,
@@ -141,19 +147,25 @@ async function loadPokemonData(pkm: any) {
     mythical: obj.species.is_mythical,
 
     abilities: obj.abilities
-      .map((ability: any) => ({
-        hidden: ability.is_hidden,
-        id: ability.ability.id,
-      }))
-      .sort((a1: any, a2: any) => a1.id - a2.id),
+      .map(
+        (ability: any): AbilityRelationship => ({
+          hidden: ability.is_hidden,
+          id: ability.ability.id,
+        })
+      )
+      .sort(
+        (a1: AbilityRelationship, a2: AbilityRelationship) => a1.id - a2.id
+      ),
 
     stats: obj.stats
-      .map((stat: any) => ({
-        id: stat.stat_id,
-        base: stat.base_stat,
-        effort: stat.effort,
-      }))
-      .sort((s1: any, s2: any) => s1.id - s2.id),
+      .map(
+        (stat: any): StatRelationship => ({
+          id: stat.stat_id,
+          base: stat.base_stat,
+          effort: stat.effort,
+        })
+      )
+      .sort((s1: StatRelationship, s2: StatRelationship) => s1.id - s2.id),
   }
 
   fs.writeFileSync(`./raw/pokemon/${pkm.id}.json`, JSON.stringify(pokemon), {
