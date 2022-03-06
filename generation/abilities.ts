@@ -1,5 +1,5 @@
-import executeQuery from "./query.mjs"
-import fs from "fs"
+import executeQuery from './query'
+import fs from 'fs'
 
 const query = `
   query Abilities {
@@ -26,13 +26,13 @@ const query = `
 export default async function load() {
   const response = await executeQuery(query)
 
-  const abilities = response.data.abilities.map(obj => {
+  const abilities = response.data.abilities.map((obj: any) => {
     const result = {
       id: obj.id,
       code: obj.name,
       name: obj.names[0].name,
-      pokemonIds: obj.pokemon.map(_ => _.id),
-    }
+      pokemonIds: obj.pokemon.map((_: any) => _.id),
+    } as any
 
     if (obj.effect.length > 0) {
       result.effect = obj.effect[0].effect
@@ -46,5 +46,7 @@ export default async function load() {
     return result
   })
 
-  fs.writeFileSync('./raw/abilities.json', JSON.stringify(abilities), { flag: 'w+' })
+  fs.writeFileSync('./raw/abilities.json', JSON.stringify(abilities), {
+    flag: 'w+',
+  })
 }

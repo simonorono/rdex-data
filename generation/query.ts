@@ -1,6 +1,6 @@
 import http from 'http'
 
-export default async function executeQuery(query) {
+export default async function executeQuery(query: string): Promise<any> {
   return new Promise((resolve, reject) => {
     const data = JSON.stringify({ query })
 
@@ -10,7 +10,7 @@ export default async function executeQuery(query) {
       path: '/v1/graphql',
       port: 8080,
       headers: {
-        'Accept': 'application/json',
+        Accept: 'application/json',
         'Content-Type': 'application/json',
         'Content-Length': data.length,
       },

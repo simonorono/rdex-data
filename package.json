@@ -1,0 +1,19 @@
+{
+  "name": "rdex-data",
+  "version": "1.0.0",
+  "description": "Repository that holds the data files for RDex and the script for generating them",
+  "scripts": {
+    "ts": "ts-node generation/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonorono/rdex-data.git"
+  },
+  "author": "Simón Oroño",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "prettier": "^2.5.1",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.2"
+  }
+}
