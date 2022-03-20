@@ -1,0 +1,76 @@
+{
+  "suffix": {
+    "-alola": [
+      "Alolan"
+    ],
+    "-eternamax": [
+      "Eternamax"
+    ],
+    "-galar": [
+      "Galarian"
+    ],
+    "-gmax": [
+      "Gigantamax"
+    ],
+    "-mega": [
+      "Mega"
+    ],
+    "-mega-x": [
+      "Mega",
+      "X"
+    ],
+    "-mega-y": [
+      "Mega",
+      "Y"
+    ],
+    "-primal": [
+      "Primal"
+    ],
+    "-ice-rider": [
+      "Ice Ryder"
+    ],
+    "-shadow-rider": [
+      "Shadow Ryder"
+    ],
+    "-ultra": [
+      "Ultra"
+    ],
+    "-original": [
+      "Original Color"
+    ]
+  },
+  "names": {
+    "castform-sunny": "Sunny Form",
+    "castform-rainy": "Rainy Form",
+    "castform-snowy": "Snowy Form",
+    "indeedee-male": "Male",
+    "indeedee-female": "Female",
+    "-hero": "Hero of Many Battles",
+    "zacian-crowned": "Crowned Sword",
+    "zamazenta-crowned": "Crowned Shield",
+    "-land": "Land Forme",
+    "-sky": "Sky Forme",
+    "-incarnate": "Incarnate Forme",
+    "-therian": "Therian Forme",
+    "-ordinary": "Ordinary Form",
+    "-resolute": "Resolute Form",
+    "-normal": "Normal Forme",
+    "-attack": "Attack Forme",
+    "-defense": "Defense Forme",
+    "-speed": "Speed! Forme",
+    "zygarde": "50% Forme",
+    "zygarde-10": "10% Forme",
+    "zygarde-complete": "Complete Forme",
+    "urshifu-single-strike": "Single Strike Style",
+    "urshifu-single-strike-gmax": "Gigantamax Urshifu (Single Strike Style)",
+    "urshifu-rapid-strike": "Rapid Strike Style",
+    "urshifu-rapid-strike-gmax": "Gigantamax Urshifu (Rapid Strike Style)",
+    "necrozma-dusk": "Dusk Mane",
+    "necrozma-dawn": "Dawn Wings",
+    "mimikyu-busted": "Busted Form",
+    "eiscue-ice": "Ice Face",
+    "eiscue-noice": "Noice Face",
+    "hoopa": "Hoopa Confined",
+    "hoopa-unbound": "Hoopa Unbound"
+  }
+}
