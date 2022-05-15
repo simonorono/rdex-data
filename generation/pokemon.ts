@@ -134,14 +134,6 @@ async function loadPokemon() {
           code: pkm.code,
           types: pkm.types.map((type: any) => [type.slot, type.type.id]),
           speciesId: pkm.species.id,
-          moves: pkm.moves.map(
-            (mv: any): MoveRelationship => ({
-              generation: mv.generation.generation_id,
-              learn_method_id: mv.learn_method,
-              level: mv.level,
-              move_id: mv.move_id,
-            })
-          ),
         } as Pokemon)
     )
     .sort((a, b) => a.id - b.id)
@@ -188,6 +180,15 @@ async function loadPokemonData(pkm: any) {
         })
       )
       .sort((s1: StatRelationship, s2: StatRelationship) => s1.id - s2.id),
+
+    moves: obj.moves.map(
+      (mv: any): MoveRelationship => ({
+        generation: mv.generation.generation_id,
+        learn_method_id: mv.learn_method,
+        level: mv.level,
+        move_id: mv.move_id,
+      })
+    ),
   }
 
   fs.writeFileSync(`./raw/pokemon/${pkm.id}.json`, JSON.stringify(pokemon), {
