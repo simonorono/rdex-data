@@ -23,6 +23,7 @@ declare global {
     name: string
     types: TypePokemonRelationship[]
     speciesId: number
+    moves: MoveRelationship[]
   }
 
   interface PokemonSpecies {
@@ -96,6 +97,25 @@ declare global {
     mythical: boolean
     abilities: AbilityRelationship[]
     stats: StatRelationship[]
+  }
+
+  interface Move {
+    id: number
+    code: string
+    name: string
+    accuracy: number
+    generation_id: number
+    power: number
+    pp: number
+    priority: number
+    type_id: number
+  }
+
+  interface MoveRelationship {
+    generation: generation.generation_id
+    level: number
+    learn_method_id: number
+    move_id: number
   }
 }
 

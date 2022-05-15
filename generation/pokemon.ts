@@ -63,6 +63,14 @@ function getPokemonDataQuery(id: number): string {
           is_legendary
           is_mythical
         }
+        moves: pokemon_v2_pokemonmoves {
+          generation: pokemon_v2_versiongroup {
+            generation_id
+          }
+          learn_method: move_learn_method_id
+          level
+          move_id
+        }
       }
     }
   `
@@ -120,12 +128,20 @@ async function loadPokemon() {
 
   const pokemons = filterPokemon(pokemonResponse.data.pokemon)
     .map(
-      pkm =>
+      (pkm: any): Pokemon =>
         ({
           id: pkm.id,
           code: pkm.code,
           types: pkm.types.map((type: any) => [type.slot, type.type.id]),
           speciesId: pkm.species.id,
+          moves: pkm.moves.map(
+            (mv: any): MoveRelationship => ({
+              generation: mv.generation.generation_id,
+              learn_method_id: mv.learn_method,
+              level: mv.level,
+              move_id: mv.move_id,
+            })
+          ),
         } as Pokemon)
     )
     .sort((a, b) => a.id - b.id)
