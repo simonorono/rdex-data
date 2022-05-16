@@ -181,15 +181,29 @@ async function loadPokemonData(pkm: any) {
       )
       .sort((s1: StatRelationship, s2: StatRelationship) => s1.id - s2.id),
 
-    moves: obj.moves.map(
-      (mv: any): MoveRelationship => ({
-        generation: mv.generation.generation_id,
-        learn_method_id: mv.learn_method,
-        level: mv.level,
-        move_id: mv.move_id,
-      })
-    ),
+    moves: [],
   }
+
+  obj.moves.forEach((mv: any) => {
+    const existing = pokemon.moves.find(
+      el =>
+        mv.generation.generation_id == el.generation &&
+        el.learn_method_id == mv.learn_method &&
+        el.level == mv.level &&
+        el.move_id == mv.move_id
+    )
+
+    if (existing) {
+      return
+    }
+
+    pokemon.moves.push({
+      generation: mv.generation.generation_id,
+      learn_method_id: mv.learn_method,
+      level: mv.level,
+      move_id: mv.move_id,
+    })
+  })
 
   fs.writeFileSync(`./raw/pokemon/${pkm.id}.json`, JSON.stringify(pokemon), {
     flag: 'w+',
