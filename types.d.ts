@@ -112,7 +112,7 @@ declare global {
   }
 
   interface MoveRelationship {
-    generation: generation.generation_id
+    generation: number
     level: number
     learn_method_id: number
     move_id: number
