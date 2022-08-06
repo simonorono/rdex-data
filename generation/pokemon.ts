@@ -86,6 +86,9 @@ function filterPokemon(pokemon: any[]) {
       case 25: // pikachu
         return ['pikachu', 'pikachu-gmax'].includes(pkm.code)
 
+      case 133: // eevee
+        return ['eevee', 'eevee-gmax'].includes(pkm.code)
+
       case 658: // greninja
         return ['greninja', 'greninja-ash'].includes(pkm.code)
 
