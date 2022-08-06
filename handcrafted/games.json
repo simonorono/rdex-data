@@ -92,6 +92,11 @@
     "pokedex": ["galar", "isle-of-armor", "crown-tundra"]
   },
   {
+    "code": "brilliant-diamond-shinning-pearl",
+    "name": "Brilliant Diamond & Shinning Pearl",
+    "pokedex": ["original-sinnoh"]
+  },
+  {
     "code": "legends-arceus",
     "name": "Legends: Arceus",
     "pokedex": ["hisui"]
