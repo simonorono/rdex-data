@@ -1,19 +1,23 @@
 {
   "suffix": {
     "-alola": ["Alolan"],
+    "-black": ["Black"],
     "-eternamax": ["Eternamax"],
     "-galar": ["Galarian"],
     "-gmax": ["Gigantamax"],
-    "-mega": ["Mega"],
+    "-ice-rider": ["Ice Ryder"],
     "-mega-x": ["Mega", "X"],
     "-mega-y": ["Mega", "Y"],
+    "-mega": ["Mega"],
+    "-original": ["Original Color"],
     "-primal": ["Primal"],
-    "-ice-rider": ["Ice Ryder"],
     "-shadow-rider": ["Shadow Ryder"],
     "-ultra": ["Ultra"],
-    "-original": ["Original Color"]
+    "-white": ["White"]
   },
   "names": {
+    "-aria": "Aria Forme",
+    "-pirouette": "Pirouette Forme",
     "-altered": "Altered Forme",
     "-attack": "Attack Forme",
     "-defense": "Defense Forme",
