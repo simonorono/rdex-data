@@ -1,84 +1,58 @@
 {
   "suffix": {
-    "-alola": [
-      "Alolan"
-    ],
-    "-eternamax": [
-      "Eternamax"
-    ],
-    "-galar": [
-      "Galarian"
-    ],
-    "-gmax": [
-      "Gigantamax"
-    ],
-    "-mega": [
-      "Mega"
-    ],
-    "-mega-x": [
-      "Mega",
-      "X"
-    ],
-    "-mega-y": [
-      "Mega",
-      "Y"
-    ],
-    "-primal": [
-      "Primal"
-    ],
-    "-ice-rider": [
-      "Ice Ryder"
-    ],
-    "-shadow-rider": [
-      "Shadow Ryder"
-    ],
-    "-ultra": [
-      "Ultra"
-    ],
-    "-original": [
-      "Original Color"
-    ]
+    "-alola": ["Alolan"],
+    "-eternamax": ["Eternamax"],
+    "-galar": ["Galarian"],
+    "-gmax": ["Gigantamax"],
+    "-mega": ["Mega"],
+    "-mega-x": ["Mega", "X"],
+    "-mega-y": ["Mega", "Y"],
+    "-primal": ["Primal"],
+    "-ice-rider": ["Ice Ryder"],
+    "-shadow-rider": ["Shadow Ryder"],
+    "-ultra": ["Ultra"],
+    "-original": ["Original Color"]
   },
   "names": {
-    "castform-sunny": "Sunny Form",
-    "castform-rainy": "Rainy Form",
-    "castform-snowy": "Snowy Form",
-    "indeedee-male": "Male",
-    "indeedee-female": "Female",
-    "-hero": "Hero of Many Battles",
-    "zacian-crowned": "Crowned Sword",
-    "zamazenta-crowned": "Crowned Shield",
-    "-land": "Land Forme",
-    "-sky": "Sky Forme",
-    "-incarnate": "Incarnate Forme",
-    "-therian": "Therian Forme",
-    "-ordinary": "Ordinary Form",
-    "-resolute": "Resolute Form",
-    "-normal": "Normal Forme",
     "-attack": "Attack Forme",
     "-defense": "Defense Forme",
+    "-hero": "Hero of Many Battles",
+    "-incarnate": "Incarnate Forme",
+    "-land": "Land Forme",
+    "-normal": "Normal Forme",
+    "-ordinary": "Ordinary Form",
+    "-resolute": "Resolute Form",
+    "-sky": "Sky Forme",
     "-speed": "Speed! Forme",
-    "zygarde": "50% Forme",
-    "zygarde-10": "10% Forme",
-    "zygarde-complete": "Complete Forme",
-    "urshifu-single-strike": "Single Strike Style",
-    "urshifu-single-strike-gmax": "Gigantamax Urshifu (Single Strike Style)",
-    "urshifu-rapid-strike": "Rapid Strike Style",
-    "urshifu-rapid-strike-gmax": "Gigantamax Urshifu (Rapid Strike Style)",
-    "necrozma-dusk": "Dusk Mane",
-    "necrozma-dawn": "Dawn Wings",
-    "mimikyu-busted": "Busted Form",
+    "-therian": "Therian Forme",
+    "castform-rainy": "Rainy Form",
+    "castform-snowy": "Snowy Form",
+    "castform-sunny": "Sunny Form",
     "eiscue-ice": "Ice Face",
     "eiscue-noice": "Noice Face",
-    "hoopa": "Hoopa Confined",
+    "giratina-altered": "Altered Forme",
+    "giratina-origin": "Origin Forme",
+    "greninja-ash": "Ash-Greninja",
     "hoopa-unbound": "Hoopa Unbound",
+    "hoopa": "Hoopa Confined",
+    "indeedee-female": "Female",
+    "indeedee-male": "Male",
+    "mimikyu-busted": "Busted Form",
+    "minior-red-meteor": "Meteor Form",
+    "minior-red": "Red Core",
+    "necrozma-dawn": "Dawn Wings",
+    "necrozma-dusk": "Dusk Mane",
+    "urshifu-rapid-strike-gmax": "Gigantamax Urshifu (Rapid Strike Style)",
+    "urshifu-rapid-strike": "Rapid Strike Style",
+    "urshifu-single-strike-gmax": "Gigantamax Urshifu (Single Strike Style)",
+    "urshifu-single-strike": "Single Strike Style",
     "wormadam-plant": "Plant Cloak",
     "wormadam-sandy": "Sandy Cloak",
     "wormadam-trash": "Trash Cloak",
-    "giratina-altered": "Altered Forme",
-    "giratina-origin": "Origin Forme",
-    "minior-red-meteor": "Meteor Form",
-    "minior-red": "Red Core",
-    "greninja-ash": "Ash-Greninja"
+    "zacian-crowned": "Crowned Sword",
+    "zamazenta-crowned": "Crowned Shield",
+    "zygarde-10": "10% Forme",
+    "zygarde-complete": "Complete Forme",
+    "zygarde": "50% Forme"
   }
 }

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Repository that holds the data files for RDex and the script for generating them",
   "scripts": {
-    "format": "prettier -w generation",
+    "format": "prettier -w generation handcrafted",
     "ts": "ts-node generation/index.ts"
   },
   "repository": {

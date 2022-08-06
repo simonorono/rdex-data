@@ -62,12 +62,24 @@
   {
     "code": "sun-moon",
     "name": "Sun & Moon",
-    "pokedex": ["original-alola", "original-melemele", "original-akala", "original-ulaula", "original-poni"]
+    "pokedex": [
+      "original-alola",
+      "original-melemele",
+      "original-akala",
+      "original-ulaula",
+      "original-poni"
+    ]
   },
   {
     "code": "ultra-sun-ultra-moon",
     "name": "Ultra Sun & Ultra Moon",
-    "pokedex": ["updated-alola", "updated-melemele", "updated-akala", "updated-ulaula", "updated-poni"]
+    "pokedex": [
+      "updated-alola",
+      "updated-melemele",
+      "updated-akala",
+      "updated-ulaula",
+      "updated-poni"
+    ]
   },
   {
     "code": "lets-go",
