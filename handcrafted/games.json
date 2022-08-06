@@ -78,5 +78,10 @@
     "code": "sword-shield",
     "name": "Sword & Shield",
     "pokedex": ["galar", "isle-of-armor", "crown-tundra"]
+  },
+  {
+    "code": "legends-arceus",
+    "name": "Legends: Arceus",
+    "pokedex": ["hisui"]
   }
 ]
