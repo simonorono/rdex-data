@@ -92,11 +92,17 @@ function filterPokemon(pokemon: any[]) {
       case 658: // greninja
         return ['greninja', 'greninja-ash'].includes(pkm.code)
 
+      case 670: // floette
+        return ['floette'].includes(pkm.code)
+
       case 718: // zygarde
         return ['zygarde', 'zygarde-10', 'zygarde-complete'].includes(pkm.code)
 
       case 774: // minior
         return ['minior-red-meteor', 'minior-red'].includes(pkm.code)
+
+      case 845: // cramorant
+        return ['cramorant'].includes(pkm.code)
 
       default:
         return true
