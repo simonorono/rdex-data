@@ -24,7 +24,7 @@ function getPokedexEntriesQuery(id: number) {
   return `
     query pokedexEntries {
       pokedex: pokemon_v2_pokedex(where: {id: {_eq: ${id}}}) {
-        pokemon: pokemon_v2_pokemondexnumbers {
+        pokemon: pokemon_v2_pokemondexnumbers(order_by: {pokedex_number: asc}) {
           pokedex_number
           pokemon_species_id
         }
