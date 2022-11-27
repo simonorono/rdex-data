@@ -1,5 +1,91 @@
 [
   {
+    "code": "kanto",
+    "name": "Kanto",
+    "researchTasks": [
+      {
+        "name": "Route 1",
+        "pokemonIds": [16, 19, 43, 69]
+      },
+      {
+        "name": "Viridian Forest",
+        "pokemonIds": [10, 13, 25]
+      },
+      {
+        "name": "Mt. Moon",
+        "pokemonIds": [35, 41, 46, 74]
+      },
+      {
+        "name": "Aquatic Pokémon",
+        "pokemonIds": [60, 72, 116, 120, 129]
+      },
+      {
+        "name": "Diglett's Cave",
+        "pokemonIds": [50, 51]
+      },
+      {
+        "name": "Psychic",
+        "pokemonIds": [63, 96, 122]
+      },
+      {
+        "name": "Rock Tunnel",
+        "pokemonIds": [4, 66, 111, 115]
+      },
+      {
+        "name": "Pokémon Tower",
+        "pokemonIds": [92, 93, 104]
+      },
+      {
+        "name": "Fighting Dojo",
+        "pokemonIds": [57, 62, 68, 106, 107]
+      },
+      {
+        "name": "Power Plant",
+        "pokemonIds": [81, 82, 100, 101, 125]
+      },
+      {
+        "name": "Seafoam Islands",
+        "pokemonIds": [79, 86, 90, 124]
+      },
+      {
+        "name": "Pokémon Mansion",
+        "pokemonIds": [88, 109, 126, 132]
+      },
+      {
+        "name": "Fossil Secrets",
+        "pokemonIds": [139, 140, 141]
+      },
+      {
+        "name": "Victory Road",
+        "pokemonIds": [42, 67, 75, 95, 112]
+      },
+      {
+        "name": "Cerulean Cave",
+        "pokemonIds": [55, 108, 112, 113, 143]
+      },
+      {
+        "name": "Evolution Stones",
+        "pokemonIds": [40, 103, 134, 135, 136]
+      },
+      {
+        "name": "Trading Mysteries",
+        "pokemonIds": [65, 68, 76, 94]
+      },
+      {
+        "name": "Flying",
+        "pokemonIds": [6, 142, 149]
+      },
+      {
+        "name": "Legendary Bird Pokémon",
+        "pokemonIds": [144, 145, 146]
+      },
+      {
+        "name": "Genetic Pokémon",
+        "pokemonIds": [150]
+      }
+    ]
+  },
+  {
     "code": "galar",
     "name": "Galar",
     "researchTasks": [
@@ -86,89 +172,176 @@
     ]
   },
   {
-    "code": "kanto",
-    "name": "Kanto",
+    "code": "sinnoh",
+    "name": "Sinnoh",
     "researchTasks": [
       {
-        "name": "Route 1",
-        "pokemonIds": [16, 19, 43, 69]
+        "name": "First Partner Pokémon",
+        "pokemonIds": [387, 390, 393]
       },
       {
-        "name": "Viridian Forest",
-        "pokemonIds": [10, 13, 25]
+        "name": "Route 205",
+        "pokemonIds": [278, 417, 418]
       },
       {
-        "name": "Mt. Moon",
-        "pokemonIds": [35, 41, 46, 74]
+        "name": "Eterna Forest",
+        "pokemonIds": [198, 200, 406, 427]
       },
       {
-        "name": "Aquatic Pokémon",
-        "pokemonIds": [60, 72, 116, 120, 129]
+        "name": "Pastoria Great Marsh",
+        "pokemonIds": [54, 194, 195]
       },
       {
-        "name": "Diglett's Cave",
-        "pokemonIds": [50, 51]
+        "name": "Mount Coronet",
+        "pokemonIds": [173, 307, 433]
       },
       {
-        "name": "Psychic",
-        "pokemonIds": [63, 96, 122]
+        "name": "Lake Front",
+        "pokemonIds": [67, 203, 215, 397, 400]
       },
       {
-        "name": "Rock Tunnel",
-        "pokemonIds": [4, 66, 111, 115]
+        "name": "Fuego Ironworks",
+        "pokemonIds": [403, 422, 423]
       },
       {
-        "name": "Pokémon Tower",
-        "pokemonIds": [92, 93, 104]
+        "name": "Iron Island",
+        "pokemonIds": [74, 208, 211]
       },
       {
-        "name": "Fighting Dojo",
-        "pokemonIds": [57, 62, 68, 106, 107]
+        "name": "Route 217",
+        "pokemonIds": [164, 308, 459]
       },
       {
-        "name": "Power Plant",
-        "pokemonIds": [81, 82, 100, 101, 125]
+        "name": "The Grand Underground",
+        "pokemonIds": [229, 280, 446]
       },
       {
-        "name": "Seafoam Islands",
-        "pokemonIds": [79, 86, 90, 124]
+        "name": "Reliable Partners",
+        "pokemonIds": [389, 392, 395]
       },
       {
-        "name": "Pokémon Mansion",
-        "pokemonIds": [88, 109, 126, 132]
+        "name": "Team Galactic's Pokémon",
+        "pokemonIds": [432, 435, 436]
       },
       {
-        "name": "Fossil Secrets",
-        "pokemonIds": [139, 140, 141]
+        "name": "The Elite Four's Pokémon",
+        "pokemonIds": [78, 122, 450, 452]
       },
       {
-        "name": "Victory Road",
-        "pokemonIds": [42, 67, 75, 95, 112]
+        "name": "Cynthia's Pokémon",
+        "pokemonIds": [350, 407, 445, 448]
       },
       {
-        "name": "Cerulean Cave",
-        "pokemonIds": [55, 108, 112, 113, 143]
+        "name": "Stark Mountain",
+        "pokemonIds": [218, 219, 227, 323]
       },
       {
-        "name": "Evolution Stones",
-        "pokemonIds": [40, 103, 134, 135, 136]
+        "name": "Route 230",
+        "pokemonIds": [44, 70, 267, 269]
       },
       {
-        "name": "Trading Mysteries",
-        "pokemonIds": [65, 68, 76, 94]
+        "name": "Route 224",
+        "pokemonIds": [279, 419, 422, 423]
       },
       {
-        "name": "Flying",
-        "pokemonIds": [6, 142, 149]
+        "name": "Deep Within Sinnoh",
+        "pokemonIds": [485, 486, 488]
       },
       {
-        "name": "Legendary Bird Pokémon",
-        "pokemonIds": [144, 145, 146]
+        "name": "The Lakes of Sinnoh",
+        "pokemonIds": [480, 481, 482]
       },
       {
-        "name": "Genetic Pokémon",
-        "pokemonIds": [150]
+        "name": "Legendary Pokémon",
+        "pokemonIds": [483, 484, 487]
+      }
+    ]
+  },
+  {
+    "code": "hisui",
+    "name": "Hisui",
+    "researchTasks": [
+      {
+        "name": "First Partner Pokémon",
+        "pokemonIds": [155, 501, 722]
+      },
+      {
+        "name": "Entry Trial",
+        "pokemonIds": [396, 399, 403]
+      },
+      {
+        "name": "Obsidian Fieldlands",
+        "pokemonIds": [77, 123, 415, 428, 900]
+      },
+      {
+        "name": "Crimson Mirelands",
+        "pokemonIds": [434, 449, 453, 548, 10237]
+      },
+      {
+        "name": "Cobalt Coastlands",
+        "pokemonIds": [10229, 10230, 363, 431, 451]
+      },
+      {
+        "name": "Coronet Highlands",
+        "pokemonIds": [10231, 10232, 207, 10235, 299]
+      },
+      {
+        "name": "Alabaster Icelands",
+        "pokemonIds": [221, 478, 10238, 712, 10243]
+      },
+      {
+        "name": "Shrouded Ruins",
+        "pokemonIds": [108, 111, 281, 442]
+      },
+      {
+        "name": "Deadwood Haunt",
+        "pokemonIds": [355, 356, 425, 441, 477]
+      },
+      {
+        "name": "Snowpoint Temple",
+        "pokemonIds": [75, 362, 437, 486]
+      },
+      {
+        "name": "Hisui's Swimming Pokémon",
+        "pokemonIds": [10234, 340, 457, 458, 10247]
+      },
+      {
+        "name": "Hisui's Flying Pokémon",
+        "pokemonIds": [130, 176, 398, 462]
+      },
+      {
+        "name": "Dependable Partners",
+        "pokemonIds": [10233, 10236, 10244]
+      },
+      {
+        "name": "Ride Pokémon",
+        "pokemonIds": [10240, 899, 901, 902, 903]
+      },
+      {
+        "name": "The Miss Fortune Sisters",
+        "pokemonIds": [94, 454, 460]
+      },
+      {
+        "name": "Space-Time Distortions",
+        "pokemonIds": [81, 137, 212, 408, 410]
+      },
+      {
+        "name": "Lake Guardians",
+        "pokemonIds": [10239, 10242, 904]
+      },
+      {
+        "name": "Incarnate Forces of Hisui",
+        "pokemonIds": [641, 642, 645, 905]
+      },
+      {
+        "name": "Origin Forme Pokémon",
+        "pokemonIds": [10245, 10246, 10007]
+      },
+      {
+        "name": "Almighty Sinnoh",
+        "pokemonIds": [493]
       }
     ]
   }
 ]
+
