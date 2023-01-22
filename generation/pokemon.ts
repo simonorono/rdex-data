@@ -104,6 +104,12 @@ function filterPokemon(pokemon: any[]) {
       case 845: // cramorant
         return ['cramorant'].includes(pkm.code)
 
+      case 1007: // Koraidon
+        return ['koraidon'].includes(pkm.code)
+
+      case 1008: // Miraidon
+        return ['miraidon'].includes(pkm.code)
+
       default:
         return true
     }
