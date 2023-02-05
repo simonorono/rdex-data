@@ -100,5 +100,10 @@
     "code": "legends-arceus",
     "name": "Legends: Arceus",
     "pokedex": ["hisui"]
+  },
+  {
+    "code": "scarlet-violet",
+    "name": "Scarlet & Violet",
+    "pokedex": ["paldea"]
   }
 ]
