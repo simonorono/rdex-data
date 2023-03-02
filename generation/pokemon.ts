@@ -35,6 +35,9 @@ const pokemonQuery = `
       species: pokemon_v2_pokemonspecy {
         id
       }
+      ev_yield: pokemon_v2_pokemonstats(where: {effort: {_gt: 0}}) {
+        stat_id
+      }
     }
   }
 `
@@ -149,6 +152,7 @@ async function loadPokemon() {
           code: pkm.code,
           types: pkm.types.map((type: any) => [type.slot, type.type.id]),
           speciesId: pkm.species.id,
+          evYield: pkm.ev_yield.map((stat: any) => stat.stat_id),
         } as Pokemon)
     )
     .sort((a, b) => a.id - b.id)

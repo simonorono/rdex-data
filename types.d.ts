@@ -23,6 +23,7 @@ declare global {
     name: string
     types: TypePokemonRelationship[]
     speciesId: number
+    evYield: number[]
   }
 
   interface PokemonSpecies {
