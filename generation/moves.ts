@@ -22,19 +22,21 @@ const query = `
 export default async function load() {
   const response = await executeQuery(query)
 
-  const moves = response.data.moves.map(
-    (obj: any): Move => ({
-      id: obj.id,
-      code: obj.code,
-      name: obj.name[0].name,
-      accuracy: obj.accuracy,
-      generation_id: obj.generation_id,
-      power: obj.power,
-      pp: obj.pp,
-      priority: obj.priority,
-      type_id: obj.type_id,
-    })
-  )
+  const moves = response.data.moves
+    .filter((obj: any) => obj.name.length > 0)
+    .map(
+      (obj: any): Move => ({
+        id: obj.id,
+        code: obj.code,
+        name: obj.name[0].name,
+        accuracy: obj.accuracy,
+        generation_id: obj.generation_id,
+        power: obj.power,
+        pp: obj.pp,
+        priority: obj.priority,
+        type_id: obj.type_id,
+      })
+    )
 
   fs.writeFileSync('./raw/moves.json', JSON.stringify(moves), {
     flag: 'w+',

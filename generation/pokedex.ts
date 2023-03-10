@@ -57,6 +57,7 @@ async function loadPokedex(): Promise<Pokedex[]> {
   const response = await executeQuery(query)
 
   const pokedex: Pokedex[] = response.data.pokedex
+    .filter((pkdx: any) => pkdx.name.length > 0)
     .map(
       (pkdx: any) =>
         ({
