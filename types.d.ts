@@ -15,6 +15,7 @@ declare global {
     code: string
     name: string
     region?: string
+    entries: PokedexEntry
   }
 
   interface Pokemon {

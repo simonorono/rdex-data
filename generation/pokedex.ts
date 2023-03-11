@@ -65,9 +65,13 @@ async function loadPokedex(): Promise<Pokedex[]> {
           code: pkdx.code,
           name: pkdx.name[0].name.replace(/original|updated/i, '').trim(),
           region: pkdx.region?.name,
-        } as Pokedex)
+          entries: pkdx.pokemon.map((entry: any) => [
+            entry.pokedex_number,
+            entry.pokemon_species_id,
+          ]),
+        })
     )
-    .sort((p1: Pokedex, p2: Pokedex) => p1.id - p2.id)
+    .sort((p1: any, p2: any) => p1.id - p2.id)
 
   fs.writeFileSync('./raw/pokedex.json', JSON.stringify(pokedex), {
     flag: 'w+',
