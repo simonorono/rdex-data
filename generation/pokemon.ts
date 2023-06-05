@@ -234,7 +234,7 @@ export default async function load() {
 
   const pokemons = await loadPokemon()
 
-  for(let pkm of pokemons) {
+  for (let pkm of pokemons) {
     await loadPokemonData(pkm)
   }
 }

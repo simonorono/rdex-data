@@ -58,19 +58,16 @@ async function loadPokedex(): Promise<Pokedex[]> {
 
   const pokedex: Pokedex[] = response.data.pokedex
     .filter((pkdx: any) => pkdx.name.length > 0)
-    .map(
-      (pkdx: any) =>
-        ({
-          id: pkdx.id,
-          code: pkdx.code,
-          name: pkdx.name[0].name.replace(/original|updated/i, '').trim(),
-          region: pkdx.region?.name,
-          entries: pkdx.pokemon.map((entry: any) => [
-            entry.pokedex_number,
-            entry.pokemon_species_id,
-          ]),
-        })
-    )
+    .map((pkdx: any) => ({
+      id: pkdx.id,
+      code: pkdx.code,
+      name: pkdx.name[0].name.replace(/original|updated/i, '').trim(),
+      region: pkdx.region?.name,
+      entries: pkdx.pokemon.map((entry: any) => [
+        entry.pokedex_number,
+        entry.pokemon_species_id,
+      ]),
+    }))
     .sort((p1: any, p2: any) => p1.id - p2.id)
 
   fs.writeFileSync('./raw/pokedex.json', JSON.stringify(pokedex), {
