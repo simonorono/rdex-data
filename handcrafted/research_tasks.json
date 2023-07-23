@@ -342,5 +342,91 @@
         "pokemonIds": [493]
       }
     ]
+  },
+  {
+    "code": "paldea",
+    "name": "Paldea",
+    "researchTasks": [
+      {
+        "name": "First Partner Pokémon",
+        "pokemonIds": [906, 909, 912]
+      },
+      {
+        "name": "Poco Path",
+        "pokemonIds": [915, 917, 921]
+      },
+      {
+        "name": "Mesagoza",
+        "pokemonIds": [925, 931, 951, 967]
+      },
+      {
+        "name": "Unknown Pokémon",
+        "pokemonIds": [984, 990]
+      },
+      {
+        "name": "Paldea's Gyms",
+        "pokemonIds": [919, 928, 939, 961]
+      },
+      {
+        "name": "The Wild Bulls of Paldea",
+        "pokemonIds": [10250, 10251, 10252]
+      },
+      {
+        "name": "Team Star's Pokémon",
+        "pokemonIds": [89, 324, 624, 927, 966, 979]
+      },
+      {
+        "name": "Titan Pokémon",
+        "pokemonIds": [950, 962, 968, 977, 978]
+      },
+      {
+        "name": "Seaside Pokémon",
+        "pokemonIds": [940, 960, 963]
+      },
+      {
+        "name": "Trasured Partners",
+        "pokemonIds": [908, 911, 914]
+      },
+      {
+        "name": "Victory Road",
+        "pokemonIds": [972, 975, 981, 982]
+      },
+      {
+        "name": "Coin Entity Pokémon",
+        "pokemonIds": [999, 1000]
+      },
+      {
+        "name": "Armored Pokémon",
+        "pokemonIds": [936, 937]
+      },
+      {
+        "name": "The Pokémon of the Elite Four",
+        "pokemonIds": [959, 970, 973, 980, 998]
+      },
+      {
+        "name": "Nemona's Pokémon",
+        "pokemonIds": [706, 745, 923]
+      },
+      {
+        "name": "The Great Crater of Paldea",
+        "pokemonIds": [986, 988, 991, 992]
+      },
+      {
+        "name": "Professor Sada's Pokémon",
+        "pokemonIds": [985, 987, 989, 1005]
+      },
+      {
+        "name": "Professor Turo's Pokémon",
+        "pokemonIds": [993, 994, 995, 1006]
+      },
+      {
+        "name": "Ruinous Pokémon",
+        "pokemonIds": [1001, 1002, 1003, 1004]
+      },
+      {
+        "name": "Legendary Pokémon",
+        "pokemonIds": [1007, 1008]
+      }
+    ]
   }
 ]
