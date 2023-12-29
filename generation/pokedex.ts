@@ -33,6 +33,11 @@ function getPokedexEntriesQuery(id: number) {
   `
 }
 
+const CUSTOM_NAMES: { [key: string]: string } = {
+  blueberry: 'Blueberry Academy',
+  kitakami: 'Kitakami',
+}
+
 async function loadPokedexEntries(pokedex: Pokedex) {
   const response = await executeQuery(getPokedexEntriesQuery(pokedex.id))
 
@@ -57,17 +62,29 @@ async function loadPokedex(): Promise<Pokedex[]> {
   const response = await executeQuery(query)
 
   const pokedex: Pokedex[] = response.data.pokedex
-    .filter((pkdx: any) => pkdx.name.length > 0)
-    .map((pkdx: any) => ({
-      id: pkdx.id,
-      code: pkdx.code,
-      name: pkdx.name[0].name.replace(/original|updated/i, '').trim(),
-      region: pkdx.region?.name,
-      entries: pkdx.pokemon.map((entry: any) => [
-        entry.pokedex_number,
-        entry.pokemon_species_id,
-      ]),
-    }))
+    .filter((pkdx: any) => {
+      if (Object.keys(CUSTOM_NAMES).includes(pkdx.code)) {
+        return true
+      }
+
+      return pkdx.name.length > 0
+    })
+    .map((pkdx: any) => {
+      const name =
+        CUSTOM_NAMES[pkdx.code] ||
+        pkdx.name[0].name.replace(/original|updated/i, '').trim()
+
+      return {
+        id: pkdx.id,
+        code: pkdx.code,
+        name,
+        region: pkdx.region?.name,
+        entries: pkdx.pokemon.map((entry: any) => [
+          entry.pokedex_number,
+          entry.pokemon_species_id,
+        ]),
+      }
+    })
     .sort((p1: any, p2: any) => p1.id - p2.id)
 
   fs.writeFileSync('./raw/pokedex.json', JSON.stringify(pokedex), {
