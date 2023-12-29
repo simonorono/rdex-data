@@ -34,7 +34,7 @@ function getPokedexEntriesQuery(id: number) {
 }
 
 const CUSTOM_NAMES: { [key: string]: string } = {
-  blueberry: 'Blueberry Academy',
+  blueberry: 'Blueberry',
   kitakami: 'Kitakami',
 }
 
