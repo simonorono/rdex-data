@@ -79,6 +79,23 @@ function getPokemonDataQuery(id: number): string {
   `
 }
 
+const wtpQuery = `
+  query WTP {
+    species: pokemon_v2_pokemonspecies {
+      name: pokemon_v2_pokemonspeciesnames(where: {pokemon_v2_language: {name: {_eq: "en"}}}) {
+        name
+      }
+      pokemon: pokemon_v2_pokemons {
+        id
+        code: name
+        species: pokemon_v2_pokemonspecy {
+          id
+        }
+      }
+    }
+  }
+`
+
 function filterPokemon(pokemon: any[]) {
   return pokemon.filter(pkm => {
     if (pkm.code.includes('totem')) {
@@ -229,7 +246,25 @@ async function loadPokemonData(pkm: any) {
   })
 }
 
+async function loadWtpData() {
+  const response = await executeQuery(wtpQuery)
+
+  let result = []
+
+  for (let spcyObj of response.data.species) {
+    result.push([
+      spcyObj.name[0].name,
+      filterPokemon(spcyObj.pokemon).map(pkm => pkm.id)
+    ])
+  }
+
+  fs.writeFileSync(`./raw/wtp.json`, JSON.stringify(result), {
+    flag: 'w+',
+  })
+}
+
 export default async function load() {
+  await loadWtpData()
   await loadSpecies()
 
   const pokemons = await loadPokemon()
