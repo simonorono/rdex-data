@@ -46,7 +46,7 @@ async function loadPokedexEntries(pokedex: Pokedex) {
       ({
         number: pkm.pokedex_number,
         species: pkm.pokemon_species_id,
-      } as PokedexEntry)
+      }) as PokedexEntry
   )
 
   fs.writeFileSync(

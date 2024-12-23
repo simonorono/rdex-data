@@ -34,11 +34,13 @@ export default async function load() {
               ({
                 typeId: dr.target.id,
                 factor: dr.factor / 100,
-              } as DamageRelationShip)
+              }) as DamageRelationShip
           ),
-        } as Type)
+        }) as Type
     )
-    .filter((type: Type) => !['shadow', 'stellar', 'unknown'].includes(type.code))
+    .filter(
+      (type: Type) => !['shadow', 'stellar', 'unknown'].includes(type.code)
+    )
     .sort((a: Type, b: Type) => a.id - b.id)
 
   fs.writeFileSync('./raw/types.json', JSON.stringify(types), { flag: 'w+' })

@@ -149,7 +149,7 @@ async function loadSpecies() {
           pokemonIds: filterPokemon(spcy.pokemons)
             .map(pkm => pkm.id)
             .sort((a, b) => a - b),
-        } as PokemonSpecies)
+        }) as PokemonSpecies
     )
     .sort((a: PokemonSpecies, b: PokemonSpecies) => a.id - b.id)
 
@@ -170,7 +170,7 @@ async function loadPokemon() {
           types: pkm.types.map((type: any) => [type.slot, type.type.id]),
           speciesId: pkm.species.id,
           evYield: pkm.ev_yield.map((stat: any) => stat.stat_id),
-        } as Pokemon)
+        }) as Pokemon
     )
     .sort((a, b) => a.id - b.id)
 
@@ -254,7 +254,7 @@ async function loadWtpData() {
   for (let spcyObj of response.data.species) {
     result.push([
       spcyObj.name[0].name,
-      filterPokemon(spcyObj.pokemon).map(pkm => pkm.id)
+      filterPokemon(spcyObj.pokemon).map(pkm => pkm.id),
     ])
   }
 
