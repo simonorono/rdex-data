@@ -36,6 +36,7 @@ function getPokedexEntriesQuery(id: number) {
 const CUSTOM_NAMES: { [key: string]: string } = {
   blueberry: 'Blueberry',
   kitakami: 'Kitakami',
+  'lumiose-city': 'Lumiose',
 }
 
 async function loadPokedexEntries(pokedex: Pokedex) {
