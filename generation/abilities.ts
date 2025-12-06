@@ -3,20 +3,20 @@ import fs from 'fs'
 
 const query = `
   query Abilities {
-    abilities: pokemon_v2_ability(where: {is_main_series: {_eq: true}}) {
+    abilities: ability(where: {is_main_series: {_eq: true}}) {
       id
       name
-      names: pokemon_v2_abilitynames(where: {pokemon_v2_language: {name: {_eq: "en"}}}) {
+      names: abilitynames(where: {language: {name: {_eq: "en"}}}) {
         name
       }
-      pokemon: pokemon_v2_pokemonabilities {
+      pokemon: pokemonabilities {
         id: pokemon_id
       }
-      effect: pokemon_v2_abilityeffecttexts(where: {pokemon_v2_language: {name: {_eq: "en"}}}) {
+      effect: abilityeffecttexts(where: {language: {name: {_eq: "en"}}}) {
         short_effect
         effect
       }
-      flavor_text: pokemon_v2_abilityflavortexts(where: {pokemon_v2_language: {name: {_eq: "en"}}}) {
+      flavor_text: abilityflavortexts(where: {language: {name: {_eq: "en"}}}) {
         flavor_text
       }
     }

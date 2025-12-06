@@ -3,18 +3,18 @@ import fs from 'fs'
 
 const speciesQuery = `
   query pokemonSpecies {
-    species: pokemon_v2_pokemonspecies {
+    species: pokemonspecies {
       id
       code: name
       order
-      pokemons: pokemon_v2_pokemons {
+      pokemons: pokemons {
         id,
         code: name,
-        species: pokemon_v2_pokemonspecy {
+        species: pokemonspecy {
           id
         }
       }
-      species_name: pokemon_v2_pokemonspeciesnames(where: {pokemon_v2_language: {name: {_eq: "en"}}}) {
+      species_name: pokemonspeciesnames(where: {language: {name: {_eq: "en"}}}) {
         name
       }
     }
@@ -23,19 +23,19 @@ const speciesQuery = `
 
 const pokemonQuery = `
   query pokemons {
-    pokemon: pokemon_v2_pokemon {
+    pokemon: pokemon {
       id
       code: name
-      types: pokemon_v2_pokemontypes {
+      types: pokemontypes {
         slot
-        type: pokemon_v2_type {
+        type: type {
           id
         }
       }
-      species: pokemon_v2_pokemonspecy {
+      species: pokemonspecy {
         id
       }
-      ev_yield: pokemon_v2_pokemonstats(where: {effort: {_gt: 0}}) {
+      ev_yield: pokemonstats(where: {effort: {_gt: 0}}) {
         stat_id
       }
     }
@@ -45,29 +45,29 @@ const pokemonQuery = `
 function getPokemonDataQuery(id: number): string {
   return `
     query PokemonData {
-      pokemon: pokemon_v2_pokemon(where: {id: {_eq: ${id}}}) {
+      pokemon: pokemon(where: {id: {_eq: ${id}}}) {
         id
         code: name
-        abilities: pokemon_v2_pokemonabilities {
+        abilities: pokemonabilities {
           is_hidden
-          ability: pokemon_v2_ability {
+          ability: ability {
             id
           }
         }
-        stats: pokemon_v2_pokemonstats {
+        stats: pokemonstats {
           base_stat
           effort
           stat_id
         }
-        species: pokemon_v2_pokemonspecy {
+        species: pokemonspecy {
           gender_rate
           capture_rate
           base_happiness
           is_legendary
           is_mythical
         }
-        moves: pokemon_v2_pokemonmoves {
-          generation: pokemon_v2_versiongroup {
+        moves: pokemonmoves {
+          generation: versiongroup {
             generation_id
           }
           learn_method: move_learn_method_id
@@ -81,14 +81,14 @@ function getPokemonDataQuery(id: number): string {
 
 const wtpQuery = `
   query WTP {
-    species: pokemon_v2_pokemonspecies {
-      name: pokemon_v2_pokemonspeciesnames(where: {pokemon_v2_language: {name: {_eq: "en"}}}) {
+    species: pokemonspecies {
+      name: pokemonspeciesnames(where: {language: {name: {_eq: "en"}}}) {
         name
       }
-      pokemon: pokemon_v2_pokemons {
+      pokemon: pokemons {
         id
         code: name
-        species: pokemon_v2_pokemonspecy {
+        species: pokemonspecy {
           id
         }
       }

@@ -3,17 +3,17 @@ import fs from 'fs'
 
 const query = `
   query allMainPokedex {
-    pokedex: pokemon_v2_pokedex(where: {is_main_series: {_eq: true}}) {
+    pokedex: pokedex(where: {is_main_series: {_eq: true}}) {
       id
       code: name
-      name: pokemon_v2_pokedexnames(where: {pokemon_v2_language: {name: {_eq: "en"}}}) {
+      name: pokedexnames(where: {language: {name: {_eq: "en"}}}) {
         name
       }
-      pokemon: pokemon_v2_pokemondexnumbers {
+      pokemon: pokemondexnumbers {
         pokedex_number
         pokemon_species_id
       }
-      region: pokemon_v2_region {
+      region: region {
         name
       }
     }
@@ -23,8 +23,8 @@ const query = `
 function getPokedexEntriesQuery(id: number) {
   return `
     query pokedexEntries {
-      pokedex: pokemon_v2_pokedex(where: {id: {_eq: ${id}}}) {
-        pokemon: pokemon_v2_pokemondexnumbers(order_by: {pokedex_number: asc}) {
+      pokedex: pokedex(where: {id: {_eq: ${id}}}) {
+        pokemon: pokemondexnumbers(order_by: {pokedex_number: asc}) {
           pokedex_number
           pokemon_species_id
         }

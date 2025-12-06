@@ -3,7 +3,7 @@ import fs from 'fs'
 
 const query = `
   query moves {
-    moves: pokemon_v2_move {
+    moves: move {
       id
       code: name
       accuracy
@@ -12,7 +12,7 @@ const query = `
       pp
       priority
       type_id
-      name: pokemon_v2_movenames(where: {pokemon_v2_language: {name: {_eq: "en"}}}) {
+      name: movenames(where: {language: {name: {_eq: "en"}}}) {
         name
       }
     }

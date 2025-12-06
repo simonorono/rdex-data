@@ -105,5 +105,10 @@
     "code": "scarlet-violet",
     "name": "Scarlet & Violet",
     "pokedex": ["paldea", "kitakami", "blueberry"]
+  },
+  {
+    "code": "legends-za",
+    "name": "Legends: Z-A",
+    "pokedex": ["lumiose-city"]
   }
 ]

@@ -3,16 +3,16 @@ import fs from 'fs'
 
 const query = `
   query allTypes {
-    types: pokemon_v2_type {
+    types: type {
       id
       code: name
-      damage: pokemon_v2_typeefficacies {
+      damage: typeefficacies {
         factor: damage_factor
-        target: pokemonV2TypeByTargetTypeId {
+        target: TypeByTargetTypeId {
           id
         }
       }
-      name: pokemon_v2_typenames(where: {pokemon_v2_language: {name: {_eq: "en"}}}) {
+      name: typenames(where: {language: {name: {_eq: "en"}}}) {
         name
       }
     }
