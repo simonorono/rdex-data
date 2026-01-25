@@ -13,8 +13,8 @@
   "author": "Simón Oroño",
   "license": "Apache-2.0",
   "dependencies": {
-    "prettier": "^3.4.2",
+    "prettier": "^3.8.1",
     "ts-node": "^10.9.2",
-    "typescript": "^5.7.2"
+    "typescript": "^5.9.3"
   }
 }
